@@ -1,0 +1,3 @@
+project=flightbox_web
+test=rspec
+template=erb

@@ -1,0 +1,2 @@
+module FlightboxWeb
+end
