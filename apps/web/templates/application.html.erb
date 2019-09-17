@@ -3,9 +3,9 @@
   <head>
     <title>FlightBox</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/assets/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="/assets/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="/assets/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -14,11 +14,15 @@
         <li class="nav-item">
           <a href="/dashboard" class="nav-link">Dashboard</a>
         </li>
-        <li class="nav-item">
-          <a href="/embed?source=skyview1090" class="nav-link">FlightAware SkyView (1090)</a>
-        </li>
-        <li class="nav-item">
-          <a href="/embed?source=tar1090" class="nav-link">TAR (1090)</a>
+        <li class="nav-item dropdown">
+          <a href="#" id="navbarDropdown1090" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ADS-B 1090
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1090">
+            <a href="/embed?source=skyview1090" class="dropdown-item">FlightAware SkyView</a>
+            <a href="/embed?source=tar1090" class="dropdown-item">TAR</a>
+            <a href="/embed?source=timelapse1090" class="dropdown-item">Timelapse</a>
+          </div>
         </li>
       </ul>
     </nav>

@@ -8,6 +8,7 @@ module Web
           case source
           when 'skyview1090' then '/dump1090-fa'
           when 'tar1090' then '/tar1090'
+          when 'timelapse1090' then '/timelapse1090'
           end
         end
 
