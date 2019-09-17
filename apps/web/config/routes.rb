@@ -3,3 +3,7 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
+get '/dashboard', to: 'dashboard#index'
+get '/embed', to: 'embed#index'
+
+root to: 'embed#index'
